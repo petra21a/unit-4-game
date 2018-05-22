@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Changa|UnifrakturCook:700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    
+</head>
+<body class="body container">
+    <header class="width-auto text-center">
+            <h1 class="md-display-3 display-4 text-warning bg-muted border-bottom border-dark">
+                The Crystal Collector
+            </h1>
+            <h2 class="md-display-4 display-5  text-muted font-italic">
+                balance the scales to win!
+            </h2>
+    </header>
+
+    <main class = "row"> 
+        <div class="col-lg-4 col-md-5 col-12 text-md-left text-center">
+            <div class="row justify-content-between">
+            <h3 class = "col-md-6 col-6 p-2 md-dislpay-4 display-5 text-center text-primary">balance <span id="crystalSum"></span></h3>
+            <h3 class = "col-md-6 col-6 p-2 md-dislpay-4 display-5 text-center text-primary">target <span id="targetValue"></span></h3>
+            </div>
+            <div class = "scales my-2 d-flex justify-content-between width-auto height-auto">
+                <img id="scale-body" class="scales-image" src="./images/scale-body.png" alt="balance scale body">
+                <div>           
+                    <img id="scale-arm" class="scales-image" src="./images/scale-arm.png" alt="balance scale arm">
+                    <img id="scale-left" class="scales-image" src="./images/scale-left.png" alt="balance left">
+                    <div id="scale-gems">
+                            <img id="scale-yellow" class="gem-image-tiny" src="./images/citrine-nobackground.png" alt="citrine gem">
+                            <img id="scale-white" class="gem-image-tiny" src="./images/diamond-nobackground.png" alt="diamond gem">
+                            <img id="scale-red" class="gem-image-tiny" src="./images/garnet-nobackground.png" alt="garnet gem">
+                            <img id="scale-blue" class="gem-image-tiny" src="./images/tanzanite-nobackground.png" alt="tanzanite gem">
+                    </div>
+                    <img id="scale-right" class="scales-image" src="./images/scale-right.png" alt="balance right">
+                    <img id="scale-moneybag" class="scales-image" src="./images/moneybag-nobackground.png" alt="moneybag">
+                </div>    
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6  my-2 text-left border">
+            <h3>Wins: <span id="wins"></span></h3>
+            <h3>Loses: <span id="loses"></span></h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-4 text-center allign-content-center">
+            <h3>Bank: <span id="bank"></span></h3>
+            <img id="bank" class="image-bank d-none d-md-block  height-auto width-auto" src="./images/chest-no-background.png" alt="treasure chest">
+        </div>
+               
+            </div>
+       
+
+
+    </main>
+        <div class="row">
+        <section class="crystals col-md-12 col-12 text-md-left text-center">
+            <button id="gem-yellow" class="btn btn-outline-light m-2">
+                <p id="yellow" class="float-left"></p>
+                <img  class="gem-image" src="./images/citrine-nobackground.png" alt="citrine gem">
+            </button>
+            <button id="gem-white" class="btn btn-outline-light m-2">
+                    <p id="white" class="float-left"></p>
+                <img class="gem-image" src="./images/diamond-nobackground.png" alt="diamond gem">
+            </button>
+            <button id="gem-red" class="btn btn-outline-light m-2">
+                    <p id="red" class="float-left"></p>
+                <img class="gem-image" src="./images/garnet-nobackground.png" alt="garnet gem">
+            </button>
+            <button id="gem-blue" class="btn btn-outline-light m-2">
+                    <p id="blue" class="float-left"></p>
+                <img class="gem-image" src="./images/tanzanite-nobackground.png" alt="tanzanite gem">
+            </button>
+        </section>
+        </div>
+  
+
+    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/game.js"></script>
+</html>

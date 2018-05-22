@@ -1,0 +1,96 @@
+.body{
+    background: url(../images/light-veneer.png);
+    /* font-family: 'Changa', sans-serif; */
+    font-family: 'UnifrakturCook', cursive;
+}
+.crystals{
+    background: url(../images/retina_wood_45deg.jpg)
+}
+.gem-image{
+    height: 100px;
+    width: auto;
+}
+
+.scales{
+    height: 200px;
+    width: 290px;
+    position: relative;
+}
+#scale-body{
+    height:180px;
+    width: 100px;
+    position: absolute;
+    left: 95px;
+    bottom: 0px;
+}
+
+#scale-arm{
+position: absolute;
+width: 200px;
+/* top: 30px;
+left: 45px; */
+top: 30px;
+left: 45px;
+transform: rotate(25deg);
+}
+#scale-left{
+    position: absolute;
+    height: 100px;
+    /* top: 45px;
+    left: 10px; */
+    /* top: 85px;
+    left: 20px; */
+    top: 5px;
+    left: 15px;
+}
+#scale-right{
+    position: absolute;
+    height: 100px;
+    /* top: 45px;
+    right: 10px; */
+    /* top: 5px;
+    right: 15px; */
+    top: 85px;
+    right: 20px;
+}
+
+#scale-moneybag{
+    position: absolute;
+    height:75px;
+    /* top: 85px;
+    right: 15px; */
+    /* top: 40px;
+    right: 10px; */
+    top: 125px;
+    right:20px;
+}
+#scale-gems{
+    position:absolute;
+    height: 75px;
+
+}
+.gem-image-tiny{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    /* top:70px; */
+    /* top:110px; */
+    top:150px;
+    font-size: 100px;
+}
+#scale-blue{
+    left:10px;
+    z-index:1;
+}
+#scale-yellow{
+    left:50px;
+    z-index:3;
+}
+#scale-white{
+    left:30px;
+    z-index:2;
+}
+#scale-red{
+    left:70px;
+    z-index: 4;
+}
